@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/event Ticket.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GuestnHost Event-ticket</title>
+  </head>
+  <body class="h-full">
+    <div class="absolute top-[80px] z-[-1] w-full bground"></div>
+
+    <nav
+      class="flex bg-white flex-wrap h-[80px] justify-between items-center py-5 px-10 w-screen"
+    >
+      <a href="" class="flex items-center justify-center"
+        ><img
+          src="assets/logo-without-bg.png"
+          alt="Logo"
+          class="max-w-[230px] object-cover"
+      /></a>
+      <ul
+        class="flex max-md:hidden flex-wrap gap-10 text-[#2A4365] font-semibold align-center justify-center text-lg"
+      >
+        <li class="py-2 hover:text-[#FF7519] transition-color duration-1000">
+          <a href="">Resources </a>
+        </li>
+        <li class="py-2 hover:text-[#FF7519] transition-color duration-1000">
+          <a href="">Products</a>
+        </li>
+        <li class="py-2 hover:text-[#FF7519] transition-color duration-1000">
+          <a href="">Plans & Pricing</a>
+        </li>
+        <li class="py-2 hover:text-[#FF7519] transition-color duration-1000">
+          <a href="">Scan Barcode</a>
+        </li>
+        <li
+          class="underline hover:text-[#FF7519] transition-color duration-1000 py-2 decoration-[#FF7519] decoration-2"
+        >
+          <a href="">Sign in</a>
+        </li>
+        <li>
+          <button
+            class="bg-[#FF7519] px-5 py-2 transition-color duration-1000 rounded-md text-white flex hover:bg-[#FF9707] items-center justify-center"
+          >
+            Sign Up
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="flex flex-col px-3">
+      <div
+        class="p-[3px] text-[#FF9309] rounded-full mx-auto font-awesome font-light border mt-[80px] max-w-[400px] text-center border-[#FF7519]"
+      >
+        Sell Out Smarter With Guestsnhost Ticketing
+      </div>
+      <h1
+        class="text-5xl max-md:text-4xl max-sm:text-3xl text-center mt-10 font-extrabold"
+      >
+        Sell Out Smarter With
+        <span class="text-[#FF7616]">Guestsnhost Ticketing</span>
+      </h1>
+      <p
+        class="text-center text-[5a648c] text-xl max-w-[1200px] mx-auto mt-8 max-md:text-sm"
+      >
+        Create, promote, and manage your events — all in one place. Whether it’s
+        an exclusive concert, corporate seminar, or fundraising gala,
+        Guestsnhost makes it easy to sell tickets, track attendance, and give
+        your guests a premium experience from start to finish.
+      </p>
+      <a
+        href=""
+        class="inline-flex shadow shadow-[0_0_100px_90px__#E0DDDF]/50 justify-center align-center text-center mt-5 py-4 rounded-md px-5 bg-[#FF7616] text-white mx-auto"
+      >
+        Sell Tickets
+      </a>
+
+      <img src="assets/00001.png" class="w-[500px] max-w-[90%] mx-auto" />
+    </div>
+    <div class="ef">
+      <h1 class="text-3xl mt-10 max-sm:text-xl p-3 text-center">
+        Effortlessly Host & Manage Any Event
+      </h1>
+      <div class="flex px-3 items-center justify-center py-10">
+        <div
+          class="max-w-[200px] text-center flex flex-col items-center justify-center"
+        >
+          <img class="w-[50%]" src="assets/online-mobile.png" alt="" />
+          <p class="text-[#FF7616] font-semi-bold text-center">Online Events</p>
+        </div>
+
+        <div
+          class="max-w-[200px] text-center flex flex-col items-center justify-center"
+        >
+          <img class="w-[50%]" src="assets/physical-mobile.png" alt="" />
+          <p class="text-[#FF7616] font-semi-bold text-center">
+            Physical Events
+          </p>
+        </div>
+        <div
+          class="max-w-[200px] text-center flex flex-col items-center justify-center"
+        >
+          <img class="w-[50%]" src="assets/hybrid-mobile.png" alt="" />
+          <p class="text-[#FF7616] font-semi-bold text-center">Hybrid Events</p>
+        </div>
+        <div
+          class="max-w-[200px] text-center flex flex-col items-center justify-center"
+        >
+          <img class="w-[50%]" src="assets/master-mobile.png" alt="" />
+          <p class="text-[#FF7616] font-semi-bold text-center">Masterclass</p>
+        </div>
+      </div>
+    </div>
+    <div class="marquee-row w-full mx-auto overflow-hidden relative">
+      <div
+        class="marquee-inner flex transform-gpu min-w-[200%] pt-2 pb-2"
+        id="row1"
+      ></div>
+    </div>
+
+    <div class="marquee-row w-full mx-auto overflow-hidden relative">
+      <div
+        class="marquee-inner marquee-reverse flex transform-gpu min-w-[200%] pt-3 pb-1"
+        id="row2"
+      ></div>
+    </div>
+
+    <div class="max-w-[1000px] mx-auto px-10 max-lg:px-4">
+      <!-- <div
+        class="w-full grid md:grid-cols-2 mt-[130px] grid-cols-1 justify-center items-center gap-[50px]"
+      >
+        <div class="flex justify-center items-center">
+          <img
+            src="assets/allinone-desktop.jpg"
+            alt=""
+            class="md:w-full sm:w-[70%] max-sm:w-full"
+          />
+        </div>
+        <div class="w-full">
+          <h1 class="text-3xl mb-2">
+            Your All-in-One Event & Masterclass Platform
+          </h1>
+          <p class="leading-normal text-[#5A648C]">
+            Sell tickets, host events, and run masterclasses effortlessly with
+            Tickets by Guest and host. Whether online, offline, or hybrid, our
+            platform ensures a seamless experience—from ticket purchase to
+            secure guest check-in via our mobile app.
+          </p>
+          <a
+            href=""
+            class="py-3 px-3 bg-[#FF7616] inline-block text-white rounded-md mt-3"
+            >Get Started</a
+          >
+        </div>
+      </div> -->
+
+      <div>
+        <h1 class="text-3xl mt-20 text-center">
+          Everything You Need - All in One Place
+        </h1>
+        <div class="grid grid-cols-1 mt-10 md:grid-cols-2 gap-5">
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">Online & Onsite Ticket Sales</h1>
+
+            <div class="items-center bg-white shadow flex justify-center">
+              <img class="w-[40%]" src="assets/00002.png" alt="" />
+            </div>
+            <p class="text-[12.5px] mt-2 text-[#747B9A]">
+              Start selling tickets online in minutes. Need to sell at the door?
+              Our system handles both — seamlessly.
+            </p>
+          </div>
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">
+              Real-Time Ticket & Attendance Tracking
+            </h1>
+
+            <div class="items-center bg-white my-4 shadow flex justify-center">
+              <img class="w-[90%]" src="assets/00003.png" alt="" />
+            </div>
+            <p class="text-[12.5px] mt-6 text-[#747B9A]">
+              Monitor ticket sales and check-in stats as they happen, from your
+              dashboard or mobile.
+            </p>
+          </div>
+
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">
+              Real-Time Insights & Global Payments
+            </h1>
+
+            <div class="items-center mt-4 flex justify-center">
+              <img
+                class="w-[50%] shadow"
+                src="assets/insight-desktop.jpg"
+                alt=""
+              />
+            </div>
+            <p class="text-[12.5px] mt-6 text-[#747B9A]">
+              Monitor ticket sales, revenue, and check-ins in real-time while
+              accepting payments in multiple currencies globally.
+            </p>
+          </div>
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">
+              Real-Time Ticket & Attendance Tracking
+            </h1>
+
+            <div class="items-center bg-white my-4 shadow flex justify-center">
+              <img class="w-[90%]" src="assets/ticketing-desktop.png" alt="" />
+            </div>
+            <p class="text-[12.5px] mt-6 text-[#747B9A]">
+              Monitor ticket sales and check-in stats as they happen, from your
+              dashboard or mobile.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mt-2 md:grid-cols-2 gap-5">
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">Custom Checkout Forms</h1>
+
+            <div class="items-center bg-white my-4 shadow flex justify-center">
+              <img class="w-[70%]" src="assets/checkout-desktop.png" alt="" />
+            </div>
+            <p class="text-[12.5px] mt-2 text-[#747B9A]">
+              Collect extra info from your customers before checkout with a
+              fully customisable form.
+            </p>
+          </div>
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">
+              Coupons, Discounts, and Donations
+            </h1>
+
+            <div class="items-center bg-white my-4 shadow flex justify-center">
+              <img class="w-[100%] shadow" src="assets/00005.png" alt="" />
+            </div>
+            <p class="text-[12.5px] mt-2 text-[#747B9A]">
+              Offer promo codes, early bird tickets, and even accept donations —
+              especially helpful for fundraisers and NGOs.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mt-2 md:grid-cols-2 gap-5">
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">Calendar Integration</h1>
+
+            <div class="items-center bg-white my-4 shadow flex justify-center">
+              <img class="w-[100%]" src="assets/calendar-desktop.png" alt="" />
+            </div>
+            <p class="text-[12.5px] mt-2 text-[#747B9A]">
+              Ensure your attendees never miss an event. Automatically share
+              venue details for offline events and meeting links for online
+              sessions, with seamless calendar integration that keeps everyone
+              in sync.
+            </p>
+          </div>
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">
+              Coupons, Discounts, and Donations
+            </h1>
+
+            <div class="items-center bg-white my-4 shadow flex justify-center">
+              <img
+                class="w-[100%] shadow"
+                src="assets/wallet-desktop.png"
+                alt=""
+              />
+            </div>
+            <p class="text-[12.5px] mt-2 text-[#747B9A]">
+              Offer promo codes, early bird tickets, and even accept donations —
+              especially helpful for fundraisers and NGOs.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 mt-2 md:grid-cols-2 gap-5">
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">QR Codes for Every Ticket</h1>
+
+            <div class="items-center bg-white my-4 shadow flex justify-center">
+              <img
+                class="w-[70%]"
+                src="assets/checkin-large-desktop.png"
+                alt=""
+              />
+            </div>
+            <p class="text-[12.5px] mt-2 text-[#747B9A]">
+              Each ticket comes with a unique QR code for fast, secure check-in.
+            </p>
+          </div>
+          <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+            <h1 class="text-[12px] font-bold">Affiliate Tracking Tools</h1>
+
+            <div class="items-center bg-white shadow my-2 flex justify-center">
+              <img class="w-[100%]" src="assets/00004.png" alt="" />
+            </div>
+            <p class="text-[12.5px] mt-2 text-[#747B9A]">
+              Boost sales by giving influencers, marketers, or media partners
+              unique affiliate links to track performance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 mt-3 md:grid-cols-2 gap-5">
+        <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+          <h1 class="text-[12px] font-bold">
+            Event Registration + Guest Check-In
+          </h1>
+
+          <div class="items-center flex justify-center"></div>
+          <p class="text-[12.5px] mt-2 text-[#747B9A]">
+            Let attendees register in advance, then validate them at the gate in
+            seconds.
+          </p>
+        </div>
+        <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+          <h1 class="text-[12px] font-bold">
+            Discounts for Large Events & Nonprofits
+          </h1>
+
+          <div class="items-center flex justify-center"></div>
+          <p class="text-[12.5px] mt-2 text-[#747B9A]">
+            We believe in giving back — ask us about our discounted pricing for
+            charity events or mega events.
+          </p>
+        </div>
+        <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+          <h1 class="text-[12px] font-bold">Collaborate With Your Team</h1>
+
+          <div class="items-center my-2 shadow flex justify-center"></div>
+          <p class="text-[12.5px] mt-2 text-[#747B9A]">
+            Invite team members, assign roles, and manage the event workflow
+            without confusion.
+          </p>
+        </div>
+        <div class="bg-[#F9F9F9] mt-2 p-5 rounded-xl">
+          <h1 class="text-[12px] font-bold">
+            Free Onsite Check-In Support (for large events)
+          </h1>
+
+          <p class="text-[12.5px] mt-3 text-[#747B9A]">
+            Planning something big? We’ll support your team with smooth,
+            professional check-in.
+          </p>
+        </div>
+      </div>
+      <!-- Here -->
+      <div class="w-full grid md:grid-cols-2 mt-[130px] grid-cols-1 gap-[50px]">
+        <div class="">
+          <h1 class="font-bold text-4xl mb-5">
+            Who Is Guestsnhost Ticketing For?
+          </h1>
+          <p class="text-[#5A648C]">
+            Our event ticketing solution is perfect for:
+          </p>
+        </div>
+        <div class="w-full">
+          <li class="flex mb-10 items-center">
+            <div
+              class="flex mr-5 justify-center items-center h-8 w-8 rounded-full bg-[#FED9BD]"
+            >
+              <i
+                class="fa-solid text-center fa-check text-[12px] text-[#FF7519]"
+              ></i>
+            </div>
+            <div>
+              <h1 class="font-bold">Concert Organizers</h1>
+              <p class="text-[#5A648C]">
+                Handle ticket sales, track capacity, and scan entries with ease.
+              </p>
+            </div>
+          </li>
+          <li class="flex mb-10 items-center">
+            <div
+              class="flex mr-5 justify-center items-center h-8 w-8 rounded-full bg-[#FED9BD]"
+            >
+              <i
+                class="fa-solid text-center fa-check text-[12px] text-[#FF7519]"
+              ></i>
+            </div>
+            <div>
+              <h1 class="font-bold">Corporate Event Planners</h1>
+              <p class="text-[#5A648C]">
+                Simplify seminar or product launch registration, payments, and
+                check-ins.
+              </p>
+            </div>
+          </li>
+          <li class="flex mb-10 items-center">
+            <div
+              class="flex mr-5 justify-center items-center h-8 w-8 rounded-full bg-[#FED9BD]"
+            >
+              <i
+                class="fa-solid text-center fa-check text-[12px] text-[#FF7519]"
+              ></i>
+            </div>
+            <div>
+              <h1 class="font-bold">Nonprofits & Fundraisers</h1>
+              <p class="text-[#5A648C]">
+                Sell tickets, collect donations, and track supporters with
+                minimal stress.
+              </p>
+            </div>
+          </li>
+          <li class="flex mb-10 items-center">
+            <div
+              class="flex mr-5 justify-center items-center h-8 w-8 rounded-full bg-[#FED9BD]"
+            >
+              <i
+                class="fa-solid text-center fa-check text-[12px] text-[#FF7519]"
+              ></i>
+            </div>
+            <div>
+              <h1 class="font-bold">Award Shows & Expos</h1>
+              <p class="text-[#5A648C]">
+                Manage multiple ticket tiers, partners, and large guest lists.
+              </p>
+            </div>
+          </li>
+          <li class="flex mb-10 items-center">
+            <div
+              class="flex mr-5 justify-center items-center h-8 w-8 rounded-full bg-[#FED9BD]"
+            >
+              <i
+                class="fa-solid text-center fa-check text-[12px] text-[#FF7519]"
+              ></i>
+            </div>
+            <div>
+              <h1 class="font-bold">Party & Festival Planners</h1>
+              <p class="text-[#5A648C]">
+                Use coupon codes, manage influencers, and track sales in real
+                time.
+              </p>
+            </div>
+          </li>
+          <li class="flex mb-10 items-center">
+            <div
+              class="flex mr-5 justify-center items-center h-8 w-8 rounded-full bg-[#FED9BD]"
+            >
+              <i
+                class="fa-solid text-center fa-check text-[12px] text-[#FF7519]"
+              ></i>
+            </div>
+            <div>
+              <h1 class="font-bold">Art Exhibitions & Pop-Ups</h1>
+              <p class="text-[#5A648C]">
+                Manage RSVPs, ticket types, and guest access effortlessly.
+              </p>
+            </div>
+          </li>
+        </div>
+      </div>
+      <!-- Start Selling with Guest"n"host-->
+    </div>
+    <!-- <div
+      class="my-20 px-4 max-w-[1200px] justify-center items-center mx-auto grid grid-cols-1 md:grid-cols-2 gap-10"
+    >
+      <div
+        class="w-full flex flex-col justify-center bg-[#F6F6F6] py-10 px-10 rounded-xl"
+      >
+        <h1 class="text-3xl mb-3">Who Is Guestsnhost Ticketing For?</h1>
+        <p>Our event ticketing solution is perfect for:</p>
+        <div class="flex justify-center items-center">
+          <div
+            class="p-3 px-5 w-[90%] father shadow mt-10 rotate-[5deg] max-md:rotate-0 max-md:w-full hadow-blue-300 relative rounded-2xl min-h-[400px] bg-white"
+          >
+            <div
+              class="flex gap-5 name naming active justify-center bg-[#F0F1F7] my-5 p-5 rounded-xl"
+            >
+              <i class="fa-solid text-[#a8a8a8] fa-key"></i>
+              <div>
+                <h1 class="font-extrabold">Concert Organizers</h1>
+                <p class="text-[12px]">
+                  Handle ticket sales, track capacity, and scan entries with
+                  ease.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-5 name1 naming justify-center bg-[#F0F1F7] my-5 p-5 rounded-xl"
+            >
+              <i class="fa-solid text-[#a8a8a8] fa-qrcode"></i>
+              <div>
+                <h1 class="font-extrabold">Corporate Event Planners</h1>
+                <p class="text-[12px]">
+                  Simplify seminar or product launch registration, payments, and
+                  check-ins.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-5 name2 naming justify-center bg-[#F0F1F7] my-5 p-5 rounded-xl"
+            >
+              <i class="fa-solid text-[#a8a8a8] fa-clipboard-list"></i>
+              <div>
+                <h1 class="font-extrabold">Nonprofits & Fundraisers</h1>
+                <p class="text-[12px]">
+                  Sell tickets, collect donations, and track supporters with
+                  minimal stress.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-5 name3 naming justify-center bg-[#F0F1F7] my-5 p-5 rounded-xl"
+            >
+              <i class="fa-solid text-[#a8a8a8] fa-burst"></i>
+              <div>
+                <h1 class="font-extrabold">Award Shows & Expos</h1>
+                <p class="text-[12px]">
+                  Manage multiple ticket tiers, partners, and large guest lists.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-5 name4 naming justify-center bg-[#F0F1F7] my-5 p-5 rounded-xl"
+            >
+              <i class="fa-solid text-[#a8a8a8] fa-burst"></i>
+              <div>
+                <h1 class="font-extrabold">Party & Festival Planners</h1>
+                <p class="text-[12px]">
+                  Use coupon codes, manage influencers, and track sales in real
+                  time.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-5 name5 naming justify-center bg-[#F0F1F7] my-5 p-5 rounded-xl"
+            >
+              <i class="fa-solid text-[#a8a8a8] fa-burst"></i>
+              <div>
+                <h1 class="font-extrabold">Art Exhibitions & Pop-Ups</h1>
+                <p class="text-[12px]">
+                  Manage RSVPs, ticket types, and guest access effortlessly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center items-center">
+        <img src="assets/guestsnhost_app1.png" class="w-[90%] allimg" alt="" />
+      </div>
+    </div> -->
+    <script></script>
+    <!--  -->
+    <div
+      class="max-w-[983px] w-[90%] mt-[30px] min-h-[271px] bg-gradient-to-r from-[#ff7519] to-[#FF7519] rounded-2xl mx-auto text-center min-h-[361px] flex flex-col justify-center p-3"
+    >
+      <h1 class="text-white text-3xl font-extrabold py-3">
+        Guestsnhost Ticketing
+      </h1>
+      <p class="text-white mb-3 text-[15px]">
+        Sell tickets online and offline with a check-in system to validate
+        tickets. GuestsnHost's e-ticketing platform provides real-time tracking,
+        secure sales, and an easy-to-use interface.
+      </p>
+      <div class="gap-5 justify-center flex-wrap align-center flex">
+        <a
+          href=""
+          class="px-3 py-3 flex justify-center items-center text-[#FF7519] rounded-xl bg-white"
+          >See Pricing</a
+        >
+        <a href="" class="px-3 py-3 rounded-xl border border-white text-white"
+          >Start Now</a
+        >
+      </div>
+    </div>
+    <h1 class="max-w-[1000px] mx-auto py-2 pt-10 text-3xl text-center">
+      Other Links
+    </h1>
+    <div
+      class="max-w-[1000px] gap-2 flex justify-center align-center px-5 py-2 mx-auto"
+    >
+      <a
+        href="event Website.html"
+        class="rounded-full text-white bg-[#FF9707] p-3 block"
+        >Create your Event Website</a
+      >
+
+      <a
+        href="Guest Mangement.html"
+        class="rounded-full text-white bg-[#FF9707] p-3 block"
+        >Send Invitation</a
+      >
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .this {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <div class="bg-[#FFDABD] mt-10">
+      <div
+        class="this max-w-[1100px] px-4 mx-auto flex flex-col items-center justify-center px-4 py-10"
+      >
+        <h1
+          class="text-3xl mt-[40px] mb-10 text-[#333333] font-extrabold text-center"
+        >
+          Frequently Asked Questions
+        </h1>
+
+        <!-- FAQ Items -->
+        <div id="faqContainer"></div>
+      </div>
+    </div>
+    <!-- TrustBox widget - Review Collector -->
+    <div class="fixed bottom-0 right-0 animate-bounce">
+      <div
+        class="trustpilot-widget absolute"
+        data-locale="en-US"
+        data-template-id="56278e9abfbbba0bdcd568bc"
+        data-businessunit-id="6727f5f7261bfeb02d629c85"
+        data-style-height="52px"
+        data-token="dbe1b564-a331-4bd6-95de-2fb93d2e3fcc"
+      >
+        <a
+          href="https://www.trustpilot.com/review/guestsnhost.com"
+          target="_blank"
+          rel="noopener"
+          >Trustpilot</a
+        >
+      </div>
+    </div>
+
+    <!-- End TrustBox widget -->
+    <!-- TrustBox script -->
+    <script
+      type="text/javascript"
+      src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+      async
+    ></script>
+    <!-- End TrustBox script -->
+    <script src="js/event Ticket.js"></script>
+    <!--  -->
+  </body>
+</html>

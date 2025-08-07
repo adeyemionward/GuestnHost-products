@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/Guest Management.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Guest Management</title>
+  </head>
+  <body>
+    <nav
+      class="flex bg-white flex-wrap h-[80px] justify-between items-center py-5 px-10 w-screen"
+    >
+      <a href="" class="flex items-center justify-center"
+        ><img
+          src="assets/logo-without-bg.png"
+          alt="Logo"
+          class="max-w-[230px] object-cover"
+      /></a>
+      <ul
+        class="flex max-md:hidden flex-wrap gap-10 max-lg:gap-5 text-[#2A4365] font-semibold align-center justify-center text-lg"
+      >
+        <li class="py-2 hover:text-[#FF7519] transition-color duration-1000">
+          <a href="">Resources </a>
+        </li>
+        <li class="py-2 hover:text-[#FF7519] transition-color duration-1000">
+          <a href="">Products</a>
+        </li>
+        <li class="py-2 hover:text-[#FF7519] transition-color duration-1000">
+          <a href="">Plans & Pricing</a>
+        </li>
+        <li class="py-2 hover:text-[#FF7519] transition-color duration-1000">
+          <a href="">Scan Barcode</a>
+        </li>
+        <li
+          class="underline hover:text-[#FF7519] transition-color duration-1000 py-2 decoration-[#FF7519] decoration-2"
+        >
+          <a href="">Sign in</a>
+        </li>
+        <li>
+          <button
+            class="bg-[#FF7519] px-5 py-2 transition-color duration-1000 rounded-md text-white flex hover:bg-[#FF9707] items-center justify-center"
+          >
+            Sign Up
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="px-5 bg-[#F9F9F9] flex justify-center items-center flex-col">
+      <h1
+        class="text-5xl max-sm:text-3xl text-[#FF7518] font-black text-center mt-[100px]"
+      >
+        Guest List Management & Tracking
+      </h1>
+      <p class="text-center max-w-[800px] mt-5">
+        Whether you’re planning a corporate gala, exclusive launch, wedding, or
+        VIP experience — Guestsnhost is your one-stop solution for sending
+        stunning invitations, managing RSVPs, and checking in guests — all in
+        one place.
+      </p>
+      <a
+        href=""
+        class="text-center max-sm:py-2 max-sm:px-3 bold inline-block max-w-[300px] mt-7 font-bold py-3 px-5 rounded-md bg-[#FF7518] text-white mx-auto"
+        >Send Invitation</a
+      >
+      <img
+        src="assets/unnamed (3).png"
+        alt=""
+        class="max-w-[100%] w-[600px] mt-7 mb-[90px]"
+      />
+    </div>
+    <div
+      class="flex mt-[50px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="flex justify-center max-[1046px]:max-w-300px bg-[#F9F9F9] rounded-3xl py-10 items-center max-w-[400px] max-sm:max-w-[500px]"
+      >
+        <img
+          src="assets/ab2e7a8e-2f20-4d47-a5e6-79c36e72adc4.png"
+          class="w-[90%]"
+        />
+      </div>
+
+      <div class="max-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px]">
+        <h1
+          class="font-bold max-sm:text-3xl text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          Unique barcode/ ID per invitation
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Each invitation comes with a unique barcode/ID, ensuring secure and
+          exclusive access to your events. This unique identifier allows you to
+          track and verify guest invitations, making event management seamless
+          and efficient.
+        </p>
+        <ul>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7518]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Unique access code for each guest
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7518]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Easy verification at the event venue
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7518]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Accurate tracking of guest RSVPs and attendance
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7518]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Enhanced security for your events
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="flex mt-[100px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="max-md:order-1 max-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px]"
+      >
+        <h1
+          class="font-bold max-sm:text-3xl text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          RSVP
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Know which guests you’ve heard from and which event(s) they are
+          attending. Quickly see which guests you need to follow-up with.Our
+          RSVP system allows you to:
+        </p>
+        <ul class="text-[18px]">
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Accept, decline, or request a maybe
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Add special requests or dietary restrictions
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Receive timely reminders about upcoming events
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Plus-One Support
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Multi-Channel Delivery: Email, SMS, WhatsApp
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Automatic Notifications and Custom Reminders
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex justify-center rounded-lg py-10 max-sm:max-w-[500px] items-center max-[1046px]:max-w-300px max-w-[400px]"
+      >
+        <img src="assets/unnamed (4).png" class="" />
+      </div>
+    </div>
+    <div
+      class="flex mt-[20px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="flex justify-center rounded-lg max-sm:max-w-[500px] py-10 items-center max-[1046px]:max-w-300px max-w-[400px]"
+      >
+        <img src="assets/emailn.png" class="w-[90%]" />
+      </div>
+      <div class="max-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px]">
+        <h1
+          class="font-bold max-sm:text-3xl text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          Email Notification
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Never miss an event again with GuestnHost's automated email
+          notifications! Our system ensures you stay on track with:
+        </p>
+        <ul class="text-[18px]">
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#ff7518]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Receive timely notifications before events
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#ff7518]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Stay informed about event details and changes
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#ff7518]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Plan ahead with ease
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="flex mt-[20px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="max-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px] max-md:order-1"
+      >
+        <h1
+          class="font-bold max-sm:text-3xl text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          Map Integration
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Easily add maps to your event pages, providing guests with clear
+          directions and venue details. Our map integration feature ensures a
+          seamless experience for your attendees.
+        </p>
+        <ul class="text-[18px]">
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Interactive maps for easy navigation
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Precise location details and directions
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Customizable map settings
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex justify-center rounded-lg max-sm:max-w-[500px] py-10 items-center max-[1046px]:max-w-300px max-w-[400px]"
+      >
+        <img src="assets/12708.jpg" class="w-[90%]" />
+      </div>
+    </div>
+    <!-- dbkjz -->
+    <div
+      class="flex mt-[20px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="flex justify-center rounded-lg max-sm:max-w-[500px] py-10 items-center max-[1046px]:max-w-300px max-w-[400px]"
+      >
+        <img src="assets/unnamed (1).png" class="w-[90%]" />
+      </div>
+      <div class="max-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px]">
+        <h1
+          class="font-bold max-sm:text-3xl text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          Invitation Design Made Easy
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Create stunning event invitations that set the tone for your special
+          day. With GuestnHost, designing invitations is a breeze.
+        </p>
+        <ul class="text-[18px]">
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7519]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Upload Your Custom Design
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7519]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Or Use & Edit Free Professional Templates
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7519]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Shareable Invitation Links
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7519]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Mobile-Friendly & Instantly Sharable
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="flex mt-[20px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="max-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px] max-md:order-1"
+      >
+        <h1
+          class="font-bold max-sm:text-3xl text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          Collaborative Event Planning
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Plan events with ease and efficiency with GuestnHost's collaborative
+          event planning tools. Work seamlessly with your team, stakeholders,
+          and vendors to bring your vision to life.
+        </p>
+        <ul class="text-[18px]">
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Team Access with Custom Roles & Permissions
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Access Your Custom Dashboard Anytime
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Monitor Real-Time Attendance
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Validate Guests on Arrival for Strictly-By-Invitation Events
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex justify-center rounded-lg max-sm:max-w-[500px] py-10 items-center max-[1046px]:max-w-300px max-w-[400px]"
+      >
+        <img src="assets/unnamed (2).png" class="w-[90%]" />
+      </div>
+    </div>
+    <div
+      class="flex mt-[20px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="flex justify-center rounded-lg max-sm:max-w-[500px] py-10 items-center max-[1046px]:max-w-300px max-w-[400px]"
+      >
+        <img src="assets/unnamed (6).png" class="w-[90%]" />
+      </div>
+      <div class="max-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px]">
+        <h1
+          class="font-bold max-sm:text-3xl text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          Smooth Onsite Guest Check-In
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Make a great first impression with a seamless and efficient check-in
+          process. GuestnHost's onsite guest check-in solution ensures a smooth
+          and hassle-free experience for your attendees.
+        </p>
+        <ul class="text-[18px]">
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7519]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Barcode/QR Code Validation
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7519]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Real-Time Attendance Tracking
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7519]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Categorize Guests (VIPs, Media, Sponsors, etc.)
+          </li>
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#FF7519]"
+            >
+              <i class="fa-solid text-white text-[12px] fa-check"></i>
+            </div>
+            Seating Chart Integration
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="flex mt-[20px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="min-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px] max-md:order-1"
+      >
+        <h1
+          class="font-bold max-sm:text-3xl text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          Contact Book for “Save the Date” Announcements
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Stay organized and ensure your "Save the Date" announcements reach all
+          your important contacts. GuestnHost's contact book feature helps you
+          manage your guest list and send timely notifications.
+        </p>
+        <ul class="text-[18px]">
+          <li class="flex py-2 items-center gap-[10px]">
+            <div
+              class="w-[30px] flex justify-center items-center rounded-full h-[30px] bg-[#F9F9F9]"
+            >
+              <i class="fa-solid text-black text-[12px] fa-check"></i>
+            </div>
+            Bulk Upload Guest Lists via Spreadsheet
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex justify-center rounded-lg max-sm:max-w-[500px] py-10 items-center max-[1046px]:max-w-300px max-w-[400px]"
+      >
+        <img src="assets/unnamed (7).png" class="w-[90%]" />
+      </div>
+    </div>
+
+    <!--  -->
+    <div
+      class="flex mt-[20px] mx-auto items-center justify-center gap-10 max-lg:gap-5 px-5 flex-wrap max-w-[1300px]"
+    >
+      <div
+        class="flex justify-center rounded-lg max-sm:max-w-[500px] py-10 items-center max-[1046px]:max-w-300px max-w-[400px]"
+      >
+        <img src="assets/iio.jpeg" class="w-[90%]" />
+      </div>
+      <div class="max-[1200px]:max-w-[500px] max-[1150px]:max-w-[450px]">
+        <h1
+          class="font-bold max-sm:text-3xl max-w-[500px] text-4xl mt-10 mb-3 text-[#FF7518]"
+        >
+          Seamless Entry with Custom QR Codes on Printed Invites
+        </h1>
+        <p class="max-w-[550px] leading-normal">
+          Prefer printed invitation cards? No problem! Each guest receives a
+          personalized QR code that can be easily placed on your custom-designed
+          card — ensuring a smooth and secure check-in experience at your event.
+        </p>
+      </div>
+    </div>
+    <!--  -->
+    <div
+      class="grid max-w-[1300px] py-5 mx-auto px-5 sm:grid-cols-2 gap-3 mt-4"
+    >
+      <div
+        class="border duration-1000 border-sm p-5 rounded-3xl hover:shadow-xl cursor-pointer"
+      >
+        <div
+          class="w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#0DC2FF]"
+        >
+          💡
+        </div>
+        <h1 class="font-bold mb-1">All-in-One. Fully Self-Service.</h1>
+        <p>
+          From Invitations to Guest Check-In — manage every step of your guest
+          experience seamlessly and professionally.
+        </p>
+      </div>
+      <div
+        class="border border-sm p-5 duration-1000 rounded-3xl hover:shadow-xl cursor-pointer"
+      >
+        <div
+          class="w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#F9F9F9]"
+        >
+          💼
+        </div>
+        <h1 class="font-bold mb-1">
+          Planning a Large Event or Require Onsite Check-In Services?
+        </h1>
+        <p>Contact us for custom pricing and support tailored to your event.</p>
+      </div>
+    </div>
+
+    <div class="mt-5 mx-auto max-w-[1300px] px-5">
+      <h1 class="text-3xl text-center mb-5 font-bold text-[#FF7519] mt-5">
+        Event software for
+      </h1>
+      <div class="grid grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2">
+        <div
+          class="flex cursor-pointer items-center border border-xl p-2 rounded-xl hover:shadow-xl duration-1000 min-h-[90px]"
+        >
+          Corporate Event Planners – Weddings & Social Event Planners Nonprofits
+          & NGOs
+        </div>
+        <div
+          class="flex items-center cursor-pointer border border-xl p-2 rounded-xl hover:shadow-xl duration-1000 min-h-[90px]"
+        >
+          Reunion
+        </div>
+        <div
+          class="flex items-center cursor-pointer border border-xl p-2 rounded-xl hover:shadow-xl duration-1000 min-h-[90px]"
+        >
+          Sport Event
+        </div>
+        <div
+          class="flex items-center cursor-pointer border border-xl p-2 rounded-xl hover:shadow-xl duration-1000 min-h-[90px]"
+        >
+          Event Agencies
+        </div>
+        <div
+          class="flex items-center cursor-pointer border border-xl p-2 rounded-xl hover:shadow-xl duration-1000 min-h-[90px]"
+        >
+          Churches
+        </div>
+        <div
+          class="flex items-center border border-xl p-2 rounded-xl hover:shadow-xl duration-1000 min-h-[90px]"
+        >
+          Private Hosts
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div
+      class="max-w-[983px] w-[90%] mt-[30px] min-h-[271px] bg-gradient-to-r from-[#ff7519] to-[#FF7519] rounded-2xl mx-auto text-center min-h-[361px] flex flex-col justify-center p-3"
+    >
+      <h1 class="text-white text-3xl font-extrabold py-3">
+        Guest List Management & Tracking
+      </h1>
+      <p class="text-white mb-3 text-[15px]">
+        Effortlessly manage your guest list and track RSVPs with GuestnHost's
+        intuitive tools.
+      </p>
+      <div class="gap-5 justify-center flex-wrap align-center flex">
+        <a
+          href=""
+          class="px-3 py-3 flex justify-center items-center text-[#FF7519] rounded-xl bg-white"
+          >See Pricing</a
+        >
+        <a href="" class="px-3 py-3 rounded-xl border border-white text-white"
+          >Start Now</a
+        >
+      </div>
+    </div>
+    <h1 class="max-w-[1000px] mx-auto py-2 pt-10 text-3xl text-center">
+      Other Links
+    </h1>
+    <div
+      class="max-w-[1000px] gap-2 flex justify-center align-center px-5 py-2 mx-auto"
+    >
+      <a
+        href="event Website.html"
+        class="rounded-full text-white bg-[#FF9707] p-3 block"
+        >Create your Event Website</a
+      >
+
+      <a
+        href="event Ticket.html"
+        class="rounded-full text-white bg-[#FF9707] p-3 block"
+        >Sell Tickets</a
+      >
+    </div>
+    <!-- Faqs -->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .this {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <div class="bg-[#FFDABD] mt-10">
+      <div
+        class="this max-w-[1100px] px-4 mx-auto flex flex-col items-center justify-center px-4 py-10"
+      >
+        <h1
+          class="text-3xl mt-[40px] mb-10 text-[#333333] font-extrabold text-center"
+        >
+          Frequently Asked Questions
+        </h1>
+
+        <!-- FAQ Items -->
+        <div id="faqContainer"></div>
+      </div>
+    </div>
+    <!-- TrustBox widget - Review Collector -->
+    <div class="fixed bottom-0 right-0 animate-bounce">
+      <div
+        class="trustpilot-widget absolute"
+        data-locale="en-US"
+        data-template-id="56278e9abfbbba0bdcd568bc"
+        data-businessunit-id="6727f5f7261bfeb02d629c85"
+        data-style-height="52px"
+        data-token="dbe1b564-a331-4bd6-95de-2fb93d2e3fcc"
+      >
+        <a
+          href="https://www.trustpilot.com/review/guestsnhost.com"
+          target="_blank"
+          rel="noopener"
+          >Trustpilot</a
+        >
+      </div>
+    </div>
+
+    <!-- End TrustBox widget -->
+    <!-- TrustBox script -->
+    <script
+      type="text/javascript"
+      src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+      async
+    ></script>
+    <!-- End TrustBox script -->
+    <script src="js/Guest Management.js"></script>
+    <!--  -->
+  </body>
+</html>

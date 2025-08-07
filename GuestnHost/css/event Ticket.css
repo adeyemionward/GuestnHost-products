@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  color: #181d36;
+}
+body {
+  overflow-x: hidden;
+}
+
+.bground {
+  height: 900px;
+  background-image: url(../assets/HeroBG_desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 700px) {
+  .bground {
+    height: 500px;
+    background-size: cover;
+    background-image: url(../assets/HeroBG_Mobile.png);
+  }
+}
+
+.name.active {
+  background: #ecfdf3;
+  border: 1px solid #059956;
+}
+.name.active h1 {
+  color: #059956;
+}
+.name.active i {
+  color: #059956;
+}
+.name.active p {
+  color: #059956;
+}
+.name1.active {
+  background: #ffece5;
+  border: 1px solid #dd9110;
+}
+.name1.active h1 {
+  color: #dd9110;
+}
+.name1.active i {
+  color: #dd9110;
+}
+.name1.active p {
+  color: #dd9110;
+}
+.name2.active {
+  background: #f7eafe;
+  border: 1px solid #7a00bc;
+}
+.name2.active h1 {
+  color: #7a00bc;
+}
+.name2.active i {
+  color: #7a00bc;
+}
+.name2.active p {
+  color: #7a00bc;
+}
+.name3.active {
+  background: #ffecf9;
+  border: 1px solid palevioletred;
+}
+.name3.active h1 {
+  color: palevioletred;
+}
+.name3.active i {
+  color: palevioletred;
+}
+.name3.active p {
+  color: palevioletred;
+}
+.name4.active {
+  background: #ffecec;
+  border: 1px solid red;
+}
+.name4.active h1 {
+  color: red;
+}
+.name4.active i {
+  color: red;
+}
+.name4.active p {
+  color: red;
+}
+.name5.active {
+  background: rgba(255, 255, 0, 0.381);
+  border: 1px solid rgb(197, 197, 0);
+}
+.name5.active h1 {
+  color: rgb(197, 197, 0);
+}
+.name5.active i {
+  color: rgb(197, 197, 0);
+}
+.name5.active p {
+  color: rgb(197, 197, 0);
+}
+
+.naming {
+  cursor: pointer;
+}
+/*  */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-inner {
+  animation: marqueeScroll 19s linear infinite;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
